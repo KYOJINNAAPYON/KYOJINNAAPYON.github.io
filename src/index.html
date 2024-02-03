@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Nana Hirotsu Profile</title>
+        <!-- Fonts -->
+        <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+    </head>
+
+    <header class="text-gray-600 body-font">
+        <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0" href="/">
+                <span class="ml-3 text-xl font-bold font-serif">Nana Hirotsu</span>
+            </a>
+            <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
+                <a class="mr-5 hover:text-gray-900 font-medium title-font" href="#about">About</a>
+                <a class="mr-5 hover:text-gray-900 font-medium title-font" href="#portfolio">Portfolio</a>
+                <a class="mr-5 hover:text-gray-900 font-medium title-font" href="#blog">Blog</a>
+                <a class="mr-5 hover:text-gray-900 font-medium title-font" href="https://github.com/KYOJINNAAPYON" target="_blank" rel="noopener noreferrer">Github</a>
+                <a class="mr-5 hover:text-gray-900 font-medium title-font" href="mailto:kyojinnaapyon@gmail.com">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <body>
+        <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto flex flex-col">
+            <div class="lg:w-4/6 mx-auto">
+                <div class="rounded-lg h-64 overflow-hidden">
+                <img alt="content" class="object-cover object-center h-full w-full" src="img/Nana Hirotsu.png" id="about">
+                </div>
+                <div class="flex flex-col sm:flex-row mt-10">
+                <div class="sm:w-1/3 text-center sm:pr-8 sm:py-8">
+                    <div class="w-40 h-40 rounded-full inline-flex items-center justify-center bg-gray-200 text-gray-400" img src="img/about_nana.jpeg">
+                    <img src="img/about_nana.jpeg" class=" rounded-full">
+                    </div>
+                <div class="flex flex-col items-center text-center justify-center">
+                    <h2 class="font-medium title-font mt-4 text-gray-900 text-lg">Nana Hirotsu</h2>
+                    <div class="w-12 h-1 bg-indigo-500 rounded mt-2 mb-4"></div>
+                </div>
+                </div>
+                <div class="sm:w-2/3 sm:pl-8 sm:py-8 sm:border-l border-gray-200 sm:border-t-0 border-t mt-4 pt-4 sm:mt-0 text-center sm:text-left">
+                    <p class="leading-relaxed text-sm mb-4">
+                    初めまして。数ある中から私のポートフォリオサイトに足を運んでくださり、ありがとうございます。<br>
+                    福岡県在住。2024年1月で30歳になりました。<br>
+                    パソコンがあれば、場所を選ばずにお仕事ができることに魅了を感じ、2022年11月よりプログラミング学習を始めました。<br>
+                    HTML/CSS、javaScript、jQueryをはじめ、WordPress、PHP、Laravelの学習まで一通り学習いたしました。<br>
+                    一日でも早くエンジニアとして働けるように、日頃からGitを使ってのシステム構築や、GitHubでソース管理を行っております。<br>
+                    まだお仕事としての経験は浅いですが、足りない知識はキャチアップし、自走力のあるエンジニアとして活躍できるよう精一杯やらせていただきます。<br>
+                    </p>
+                    <!-- <a class="text-indigo-500 inline-flex items-center">Learn More
+                    <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+                    <path d="M5 12h14M12 5l7 7-7 7"></path>
+                    </svg>
+                    </a> -->
+                </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+        <section class="text-gray-600 body-font lg:w-4/6 mx-auto">
+        <div class="container px-5 py-24 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="text-2xl font-medium title-font mb-4 text-gray-900 tracking-widest" id="portfolio">Portfolio</h1>
+                <h4 class="text-gray-500 mb-3">検証用アカウントはREADMEを参照ください</h4>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                        <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="img/simplememotall.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">メモアプリ</h2>
+                            <h3 class="text-gray-500 mb-3">PHP,Laravel</h3>
+                            <p class="mb-4"><a href="https://tallstack.dev/" target="_blank" rel="noopener noreferrer" class="font-bold">Tallスタック</a>の学習に挑戦し、Livewireのリアルタイム検索やリアルタイムバリデーション、Tailwind CSSを使用して実装しました。</p>
+                            <span class="inline-flex">
+                            <a class="ml-2 text-gray-500" href="https://tall-simplememo-3f94345e1cc0.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-app-window" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M6 8h.01" /><path d="M9 8h.01" /></svg>
+                            </a>
+                            <a class="ml-2 text-gray-500" href="https://github.com/KYOJINNAAPYON/tall-simplememo" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="img/samuraimart.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">ショッピングアプリ</h2>
+                            <h3 class="text-gray-500 mb-3">PHP,Laravel</h3>
+                            <p class="mb-4">カートに入れて、送料の計算、決済までできるアプリを作成しました。Laravel-adminを使用し、管理者ページも作成しました。</p>
+                            <span class="inline-flex">
+                            <a class="ml-2 text-gray-500" href="https://samuraimart-nh.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-app-window" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M6 8h.01" /><path d="M9 8h.01" /></svg>
+                            </a>
+                            <a class="ml-2 text-gray-500" href="https://github.com/KYOJINNAAPYON/laravel-samuraimart" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="img/originalauth.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">オリジナル認証機能</h2>
+                            <h3 class="text-gray-500 mb-3">PHP,Laravel</h3>
+                            <p class="mb-4">認証パッケージは使用せず、Laravelのドキュメントを見て、独自の認証機能の作成に挑戦しました。<b>Docker環境</b>を用いて作成しました。</p>
+                            <span class="inline-flex">
+                            <a class="ml-2 text-gray-500" href="https://original-auth-5c89d490e464.herokuapp.com/login" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-app-window" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M6 8h.01" /><path d="M9 8h.01" /></svg>
+                            </a>
+                            <a class="ml-2 text-gray-500" href="https://github.com/KYOJINNAAPYON/original-auth" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="img/beachapp.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">画像投稿アプリ</h2>
+                            <h3 class="text-gray-500 mb-3">PHP,Laravel</h3>
+                            <p class="mb-4">要件定義から<a href="https://app.diagrams.net/#G1rPTc7qDndWBGKU_u-EwPG_pEN0XUPBvO" target="_blank" rel="noopener noreferrer" class="font-bold">ER図</a>まで、初めて一から自分で作成した成果物です。デザイン含め、まだまだ至らない点があり、未完成です。</p>
+                            <span class="inline-flex">
+                            <!-- <a class="ml-2 text-gray-500" href="https://beachpost-app.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-app-window" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M6 8h.01" /><path d="M9 8h.01" /></svg>
+                            </a> -->
+                            <a class="ml-2 text-gray-500" href="https://github.com/KYOJINNAAPYON/laravel-beachpost-app" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="img/todo.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">Todoアプリ</h2>
+                            <h3 class="text-gray-500 mb-3">PHP,Laravel</h3>
+                            <p class="mb-4">タスクが完了したら取り消し線が引かれたり、タグや目標を自由に追加できるようにいたしました。</p>
+                            <span class="inline-flex">
+                            <a class="ml-2 text-gray-500" href="https://todo-app-nh.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-app-window" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M6 8h.01" /><path d="M9 8h.01" /></svg>
+                            </a>
+                            <a class="ml-2 text-gray-500" href="https://github.com/KYOJINNAAPYON/laravel-todo-app-new" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="img/bootstrap.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">レストランサイト</h2>
+                            <h3 class="text-gray-500 mb-3">html,css</h3>
+                            <p class="mb-4">Bootstrapを習得し、マルチデバイス対応のWebサイトを作成しました。GitHub PagesにてHTMLをWebページとしてデプロイしました。</p>
+                            <span class="inline-flex">
+                            <a class="ml-2 text-gray-500" href="https://kyojinnaapyon.github.io/restaurant/" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-app-window" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M6 8h.01" /><path d="M9 8h.01" /></svg>
+                            </a>
+                            <a class="ml-2 text-gray-500" href="https://github.com/KYOJINNAAPYON/restaurant" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="img/socialtech.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">コーポレートサイト</h2>
+                            <h3 class="text-gray-500 mb-3">html,css</h3>
+                            <p class="mb-4">html,cssの基礎から、jQueryを学習し、ウィンドウの大きさによってメニュー表示を変えることができます。</p>
+                            <span class="inline-flex">
+                            <a class="ml-2 text-gray-500" href="https://socialtech-nh.herokuapp.com/" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-app-window" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M6 8h.01" /><path d="M9 8h.01" /></svg>
+                            </a>
+                            <a class="ml-2 text-gray-500" href="https://github.com/KYOJINNAAPYON/socialtech" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"></path>
+                            </svg>
+                            </a>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 lg:w-1/2">
+                    <div class="h-full flex sm:flex-row flex-col items-center sm:justify-start justify-center text-center sm:text-left">
+                    <img alt="team" class="flex-shrink-0 rounded-lg w-48 h-48 object-cover object-center sm:mb-0 mb-4" src="img/hairtech.png">
+                        <div class="flex-grow sm:pl-8">
+                            <h2 class="title-font font-medium text-lg text-gray-900">架空の美容室サイト</h2>
+                            <h3 class="text-gray-500 mb-3">WordPress</h3>
+                            <p class="mb-4">テーマ「Flash」を使用しました。その他「Contact Form by WPForms」を使用し、お問合せフォームをプラグインしました。<br>
+                            ※その他作品は<a href="https://github.com/KYOJINNAAPYON/Wordpress_university" target="_blank" rel="noopener noreferrer" class="font-bold">こちら</a></p>
+                            <span class="inline-flex">
+                            <a class="ml-2 text-gray-500" href="http://kyojinnnapyon.holy.jp/hairsalon-nh/" target="_blank" rel="noopener noreferrer">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-app-window" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 5m0 2a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2z" /><path d="M6 8h.01" /><path d="M9 8h.01" /></svg>
+                            </a>
+                            
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    
+        <section class="text-gray-600 body-font">
+        <div class="container px-5 py-24 mx-auto lg:w-4/6 mx-auto">
+            <div class="flex flex-col text-center w-full mb-20">
+                <h1 class="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900" id="blog">Blog</h1>
+            </div>
+            <div class="flex flex-wrap -m-4">
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative h-72">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="img/xmas.JPG">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">2023.12</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">X'mas Party</h1>
+                    <p class="leading-relaxed">お友だちのお家に招待してもらいました。お料理と美味しいワインでガールズトークが止まらずでした。</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative h-72">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="img/kurashiki.JPG">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">2023.11</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">倉敷</h1>
+                    <p class="leading-relaxed">家族旅行で倉敷にお邪魔しました。写真は美観地区。デニムストリートもデニムの色々な商品があって楽しかったです。</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative h-72">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="img/beach.JPG">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">2023.09</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">大好きなビーチ</h1>
+                    <p class="leading-relaxed">夏も終わりかけで少し肌寒いですが、砂浜に穴を掘って遊んだり、ゴロゴロして過ごしました。海が大好きです。</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative h-72">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="img/momkanreki.JPG">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">2023.05</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">母の還暦祝い</h1>
+                    <p class="leading-relaxed">私の母が還暦を迎えたので、家族みんなで盛大にお祝いしました！ケーキは大好きなキルフェボン。</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative h-72">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="img/teamlabo.JPG">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">2023.04</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">チームラボ</h1>
+                    <p class="leading-relaxed">東京の豊洲にあるチームラボに行ってきました。世界観が異空間でとっても面白い体験をさせていただきました。</p>
+                    </div>
+                    </div>
+                </div>
+                <div class="lg:w-1/3 sm:w-1/2 p-4">
+                    <div class="flex relative h-72">
+                    <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="img/latte.JPG">
+                    <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white opacity-0 hover:opacity-100">
+                    <h2 class="tracking-widest text-sm title-font font-medium text-indigo-500 mb-1">2023.03</h2>
+                    <h1 class="title-font text-lg font-medium text-gray-900 mb-3">ブルーボトルコーヒー</h1>
+                    <p class="leading-relaxed">「出来立てはふわふわだからぜひこのまま一口飲んでほしい」と言って下さったのですぐに一口…本当にふわふわで感動！</p>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </body>
+
+    <footer class="text-gray-600 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <a class="flex title-font font-medium items-center md:justify-start justify-center text-gray-900">
+                <span class="ml-3 text-xl font-serif font-bold">Nana Hirotsu</span>
+            </a>
+            <p class="text-sm text-gray-500 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0 mt-4 font-serif">© 2024</p>
+            <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
+            </span>
+        </div>
+    </footer>
+
+</html>
